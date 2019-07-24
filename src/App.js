@@ -15,12 +15,18 @@ export default class App extends Component {
   }
   render() {
     return (
-      <div className="container">
-        <h1>Ecommerce shopping cart application</h1>
-        <br />
-        <div className="row">
-          <div className="col-md-8">
-            <Products products={this.state.filteredProducts} />
+      <div>
+        <div className=" navbar bg-primary text-center pb-2">
+          <h1 style={{ color: "white" }}>
+            Ecommerce shopping cart application
+          </h1>
+        </div>
+        <div className="container">
+          <br />
+          <div className="row">
+            <div className="col-md-8">
+              <Products products={this.state.filteredProducts} />
+            </div>
           </div>
         </div>
       </div>
